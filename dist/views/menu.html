@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="items-container">
+		<div class="col-md-4" ng-repeat="item in menu.items">
+			<h4><a ui-sref="food({id:item.id})">{{item.name}}</a></h4>
+			<img class="img-thumbnail" ng-src="{{item.img? item.img : null}}" alt="{{item.name}}">
+			<p>
+				Rating: {{item.rating}} <span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this item!</span>
+				<button ng-click="menu.increment(item)" class="btn btn-default">+</button>
+				<button ng-click="menu.decrement(item)" class="btn btn-default">-</button>				
+			</p>
+			<div class="well">
+				<select ng-model="item.meal" name="">
+					<option value="breakfast">Breakfast</option>
+					<option value="lunch">Lunch</option>
+					<option value="dinner">Dinner</option>
+				</select>
+				<button ng-click="menu.chooseItem(item)">Select Item</button>
+			</div>		
+
+<!-- 			<p><b> Your review:</b></p>
+			<p>
+				<textarea ng-model="item.newReview" name="menu.review"></textarea>
+			</p>
+			<p>{{item.newReview}}</p> -->
+		</div>
+	</div>
+</div>
