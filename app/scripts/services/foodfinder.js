@@ -10,7 +10,7 @@
 angular.module('udaciMealsApp')
   .service('foodFinder', ['$http', function ($http) {
     // Using AngularJS $http
-    this.getMenu = function() {return $http({method: 'GET', url: '/menu/menu-old.json'})}
+    this.getMenu = function() {return $http({method: 'GET', url: 'https://api.myjson.com/bins/6xj7c'})}
     // Or using fetch()
     // this.getMenu = function() {return fetch('/menu/menu-old.json')};
     this.getItem = function(id){
