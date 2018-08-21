@@ -1,0 +1,13 @@
+{
+  "id": "ham-goat-cheese-croissant",
+  "name": "Ham and Goat Cheese Croissant",
+  "img": "ham-goat-cheese-croissant.jpg",
+  "calories": 670,
+  "rating": 3.9,
+  "description": "The pear and watercress add an unconventional touch to a basic ham and cheese sandwich.",
+  "reviews": [
+    "Delicious. I love goat cheese!",
+    "very good, lots of flavors.",
+    "The croissant was dry and kind of chewy"
+  ]
+}
