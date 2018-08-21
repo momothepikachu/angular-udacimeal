@@ -89,7 +89,7 @@ angular.module('udaciMealsApp')
     // Or using fetch()
     // this.getMenu = function() {return fetch('/menu/menu-old.json')};
     this.getItem = function(id){
-        let menuItemFile = '/menu/'+id+'.json';
+        let menuItemFile = './menu/'+id+'.json';
         return $http({method: 'GET', url: menuItemFile});
     }
     this.getImg = function(searchedForText) {
