@@ -1,0 +1,22 @@
+<div class="row">
+	<p class="lead">Click a day and select your favourite food for each meal :</p>
+	<div class="col-md-2" ng-repeat="(day, menuCategory) in order.list" ng-click="order.setDay(day)">
+		<div class="well" style="text-align: center; cursor: pointer;">
+			<h4>{{day}}</h4>		
+		</div>
+		<dl>
+			<dt>Breakfast</dt>
+			<dd>
+				{{menuCategory.breakfast}}
+			</dd>
+			<dt>Lunch</dt>
+			<dd>
+				{{menuCategory.lunch}}
+			</dd>
+			<dt>Dinner</dt>
+			<dd>
+				{{menuCategory.dinner}}
+			</dd>
+		</dl>
+	</div>
+</div>
