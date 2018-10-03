@@ -1,7 +1,6 @@
 # PickUr-Meals
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.16.0.
+This project is built with Yeoman along with the Angular Generator plugin.
 
 ![screenshot](meals.gif)
 
